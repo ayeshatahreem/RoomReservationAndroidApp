@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayShade3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Room"
+        android:textColor="@color/whiteShade1"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Room #"
+                android:textColorHint="@color/whiteShade2"
+                android:textColor="@color/whiteShade1"
+                android:layout_centerInParent="true"
+                android:id="@+id/addRoomRoomNumber"
+                android:backgroundTint="#ffffff"
+                android:inputType="number"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:layout_centerInParent="true"
+                android:id="@+id/addRoomPrice"
+                android:textColorHint="@color/whiteShade2"
+                android:textColor="@color/whiteShade1"
+                android:backgroundTint="#ffffff"
+                android:inputType="number"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addRoomPictureMainLL"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/upload_icon"
+                android:id="@+id/addRoomUploadPic"
+                android:padding="30dp"
+                android:scaleType="centerCrop"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/addRoomFeature1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE-WIFI"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteShade1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/redShade1"
+                android:layout_marginTop="10dp"
+                />
+            <CheckBox
+                android:id="@+id/addRoomFeature2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE-WIFI"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteShade1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/redShade1"
+                android:layout_marginTop="10dp"
+                />
+            <CheckBox
+                android:id="@+id/addRoomFeature3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE-WIFI"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteShade1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/redShade1"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/addRoomFeature4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE-WIFI"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteShade1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/redShade1"
+                android:layout_marginTop="10dp"
+                />
+            <CheckBox
+                android:id="@+id/addRoomFeature5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE-WIFI"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteShade1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/redShade1"
+                android:layout_marginTop="10dp"
+                />
+            <CheckBox
+                android:id="@+id/addRoomFeature6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE-WIFI"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteShade1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/redShade1"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add Room"
+        android:textColor="@color/whiteShade1"
+        android:id="@+id/addRoomAddButton"
+        android:layout_marginTop="30dp"
+        android:background="@color/blueShade1"
+        />
+
+    <RelativeLayout
+        android:id="@+id/addRoomLoadingRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/whiteShade1"/>
+    </RelativeLayout>
+</LinearLayout>
