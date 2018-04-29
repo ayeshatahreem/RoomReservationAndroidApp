@@ -71,5 +71,4 @@ public class ActivityLoginSignup extends AppCompatActivity {
         tabsStrip.setTextColor(Color.parseColor("#FFFFFF"));
         tabsStrip.setDividerColor(Color.TRANSPARENT);
     }
-
 }
